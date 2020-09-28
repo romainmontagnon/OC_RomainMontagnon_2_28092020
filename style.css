@@ -2,16 +2,83 @@
 Set et reset CSS
 ***********/
 
+/* Applique la police a toute la page */
+*{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+#bloc_general{
+    width: 1440px;
+    margin:0px auto;
+    /* border: black 2px solid; */
+}
+
+/* Determine la taille max, et centre le contenue de la page*/
+#bloc_principal{
+    margin: 0px 56px;
+}
+
+/* Suppression des styles par defaut des listes a puces */
 ul {
     list-style-type: none;
     }
-body{
-    font-family: 'Raleway', sans-serif;
+
+/* Desactivation du soulignement automatique des liens */
+a{
+    text-decoration: none;
 }
+
+/* Les liens une fois cliqués apparaissent en noir */
+a:visited{
+    color:black;
+}
+
+
 /***********
 CSS
 ***********/
 
+#header_div_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header_div_1 nav {
+    position : absolute;
+    left : 65%;
+    width: 33%;
+    color:#0065FC;
+    /* border:1px dotted black; */
+}
+#header_div_1 nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border:1px solid green; */
+}
+
+#header_div_1 nav ul li{
+    width: 33%;
+    text-align: center;
+    /* border: blue 1px dotted; */
+}
+
+/* #header_div_1 nav ul li:hover{
+    border-top : 3px #0065FC solid;
+    margin-top: 20px;    
+} */
+
+.nav_link:hover{
+    width: 40px;
+    border-top : 3px #0065FC solid;
+    padding-top: 17px;
+}
+
+#inscrire{
+    font-weight: 700;
+}
 /***********
 Media Querries
 ***********/
