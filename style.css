@@ -5,7 +5,9 @@ Set et reset CSS
 ul {
     list-style-type: none;
     }
-
+body{
+    font-family: 'Raleway', sans-serif;
+}
 /***********
 CSS
 ***********/
