@@ -34,8 +34,10 @@ a{
 a:visited{
     color:black;
 }
-
-
+/* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
+button:focus{
+    outline:0;
+}
 /***********
 CSS
 ***********/
@@ -94,6 +96,46 @@ header h2{
 header p{
     font-size: 0.938em;
 }
+/* Boite de recherche */
+
+#box_recherche{
+    font-size: 1.125em;
+    width: 29%;
+    height: 3.188em; /* 51px*/
+    border: 0.063em solid #f2f2f2;
+    border-radius: 0.813em 0.813em;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#icone_locate{
+    width: 12.4%;
+    display: flex;
+    justify-content: center;
+}
+
+#champ_recherche{
+    height: 3.188em; /* 51px*/
+    border: none;
+    font-weight: 700;
+    /* border: 1px solid #000; */
+}
+
+button{
+    width: 35%;
+    height: 3.125em; /* 50px*/
+    box-sizing: content-box ;
+    border: 0.063em solid #f2f2f2;
+    border-top-right-radius: 0.813em;
+    border-bottom-right-radius: 0.813em;
+    background-color:#0065fc;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
 /***********
 Media Querries
 ***********/
