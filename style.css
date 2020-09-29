@@ -139,3 +139,9 @@ button{
 /***********
 Media Querries
 ***********/
+@media all and (max-width: 768px){
+    #bloc_general{
+        width: auto;
+        margin:auto;
+    }
+}
