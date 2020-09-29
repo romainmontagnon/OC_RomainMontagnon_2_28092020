@@ -136,6 +136,57 @@ button{
     font-weight: 700;
 }
 
+/* HEADER*/
+/* Filtres */
+
+.filtre, .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: 10px; */
+}
+.filtre ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    border: 1px black solid;
+}
+
+.icone_filtre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    width : 2em;
+    height: 2em;
+    
+}
+
+.filtre ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.info i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid #f2f2f2 2px;
+    width : 2em;
+    height: 2em;
+}
+
+
 /***********
 Media Querries
 ***********/
