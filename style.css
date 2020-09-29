@@ -6,17 +6,18 @@ Set et reset CSS
 *{
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
+    font-size: 1em;
 }
 
 #bloc_general{
-    width: 1440px;
-    margin:0px auto;
+    width: 90em; /* 1440px*/
+    margin:0em auto;
     /* border: black 2px solid; */
 }
 
 /* Determine la taille max, et centre le contenue de la page*/
 #bloc_principal{
-    margin: 0px 56px;
+    margin: 0em 56px; /* 0px 56px*/
 }
 
 /* Suppression des styles par defaut des listes a puces */
@@ -39,6 +40,8 @@ a:visited{
 CSS
 ***********/
 
+/* HEADER*/
+/* Logo et NAV */
 #header_div_1{
     display: flex;
     flex-direction: row;
@@ -71,13 +74,25 @@ CSS
 } */
 
 .nav_link:hover{
-    width: 40px;
-    border-top : 3px #0065FC solid;
-    padding-top: 17px;
+    width: 2.5em; /* 40px */
+    border-top : 0.188em #0065FC solid; /* 3px */
+    padding-top: 1.063em; /* 17px */
 }
 
 #inscrire{
     font-weight: 700;
+}
+
+/* HEADER*/
+/* Titre Paragraphe Bouton */
+
+header h2{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+header p{
+    font-size: 0.938em;
 }
 /***********
 Media Querries
