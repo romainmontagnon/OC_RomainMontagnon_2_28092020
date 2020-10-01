@@ -34,10 +34,19 @@ a{
 a:visited{
     color:black;
 }
+
 /* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
 button:focus{
     outline:0;
 }
+
+button:hover{
+    background: linear-gradient(#0065fc, #0040fc);
+}
+button:active{
+    transform: scale(0.98);
+}
+
 /***********
 CSS
 ***********/
@@ -54,7 +63,7 @@ CSS
     position : absolute;
     left : 65%;
     width: 33%;
-    color:#0065FC;
+    color:#0065fc;
     /* border:1px dotted black; */
 }
 #header_div_1 nav ul{
@@ -143,14 +152,18 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: 10px; */
+}
+
+.filtre p{
+    font-size: 1.125em;;
+    margin-right: 1em;
 }
 .filtre ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    width: 70%;
     border: 1px black solid;
+    padding-left: 0em;
 }
 
 .icone_filtre{
@@ -163,14 +176,23 @@ button{
     border-radius: 50%;
     width : 2em;
     height: 2em;
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .filtre ul li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px black solid;
+    border: 0.126em #f2f2f2 solid;
+    border-radius: 20px;
+    margin-left: 1.5em;
+}
+
+.filtre ul li span{
+    font-size: 1.125em;
+    margin-left: 0.813em;
+    margin-right: 1.25em;
 }
 
 .info i{
@@ -182,7 +204,7 @@ button{
     color: #0065fc;
     background-color: #fff;
     border-radius: 50%;
-    border: solid #f2f2f2 2px;
+    border: solid #f2f2f2 0.063px;
     width : 1.5em;
     height: 1.5em;
     margin-right: 0.688em; /* 11px */
