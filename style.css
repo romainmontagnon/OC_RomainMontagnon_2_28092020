@@ -40,6 +40,18 @@ a:visited {
 CSS
 ***********/
 
+/* Regles generales */
+
+h2{
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+
+h3{
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
 /* HEADER*/
 /* Logo et NAV */
 #header_div_1 {
@@ -85,11 +97,6 @@ CSS
 
 /* HEADER*/
 /* Titre Paragraphe Bouton */
-
-header h2 {
-  font-size: 1.25em;
-  font-weight: 700;
-}
 
 header p {
   font-size: 0.938em;
@@ -253,10 +260,28 @@ button {
   margin-right: 1.25em;
 }
 
-/* footer{
-    height: 20px;
-    background-color: grey;
-} */
+/* FOOTER */
+
+footer{
+    background-color: #f2f2f2;
+}
+
+footer div{
+    margin-left: 3.125em ;
+    margin-top: 3.125em ;
+    margin-bottom: 3.375em;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div div ul{
+    padding: 0em;
+}
 
 /***********
 Media Querries
