@@ -78,16 +78,9 @@ h3 {
 #header_div_1 nav ul li {
   width: 33%;
   text-align: center;
-  /* border: blue 1px dotted; */
 }
 
-/* #header_div_1 nav ul li:hover{
-    border-top : 3px #0065FC solid;
-    margin-top: 20px;    
-} */
-
 .nav_link:hover {
-  /* width: 2.5em; 40px */
   border-top: 0.188em #0065fc solid; /* 3px */
   cursor: pointer;
 }
@@ -273,26 +266,37 @@ button {
 footer {
   background-color: #f2f2f2;
 }
-
-footer div {
-  margin-left: 3.125em;
+footer h3{
   margin-top: 3.125em;
-  margin-bottom: 3.375em;
+  margin-top: 1.375em;
+}
+#footer_div {
+  margin-right: 23.125em;
+  margin-left: 3.125em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-footer div div {
+#footer_div div {
   display: flex;
   flex-direction: column;
   color: #000;
 }
 
-footer div div ul {
+#footer_div div ul {
   padding: 0em;
 }
 
+footer li {
+  font-size: 1em;
+  margin-bottom: 0.938em;0;
+}
+
 footer a {
+  font-size: 1em;
+  margin-bottom: 0.938em;
   color: #000;
 }
 
