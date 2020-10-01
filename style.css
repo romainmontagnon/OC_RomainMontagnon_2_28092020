@@ -17,8 +17,8 @@ Set et reset CSS
 
 /* Determine la taille max, et centre le contenue de la page*/
 #bloc_principal {
-    width: 83em; /* 1440px - 2*56px = 1328px*/
-    margin: 0em auto;
+  width: 83em; /* 1440px - 2*56px = 1328px*/
+  margin: 0em auto;
 }
 
 /* Suppression des styles par defaut des listes a puces */
@@ -42,14 +42,14 @@ CSS
 
 /* Regles generales */
 
-h2{
-    font-size: 1.25em;
-    font-weight: 700;
-  }
+h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
 
-h3{
-    font-size: 1.125em;
-    font-weight: 700;
+h3 {
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 /* HEADER*/
@@ -71,6 +71,7 @@ h3{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top:0px;
   /* border:1px solid green; */
 }
 
@@ -86,10 +87,16 @@ h3{
 } */
 
 .nav_link:hover {
-  width: 2.5em; /* 40px */
+  /* width: 2.5em; 40px */
   border-top: 0.188em #0065fc solid; /* 3px */
-  padding-top: 1.063em; /* 17px */
+  cursor: pointer;
 }
+
+.nav_link {
+    /* width: 2.5em; 40px */
+    border-top:0.188em #fff solid;
+    padding-top: 1.063em; /* 17px */
+  }
 
 #inscrire {
   font-weight: 700;
@@ -130,16 +137,16 @@ header p {
 /* Bouton */
 /* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
 button:focus {
-    outline: 0;
-  }
-  /* Effet de degrader lors du survol d'un bouton */
-  button:hover {
-    background: linear-gradient(#0065fc, #0040fc);
-  }
-  /* Effet de zoom arriere lors du clique sur un bouton */
-  button:active {
-    transform: scale(0.98);
-  }
+  outline: 0;
+}
+/* Effet de degrader lors du survol d'un bouton */
+button:hover {
+  background: linear-gradient(#0065fc, #0040fc);
+}
+/* Effet de zoom arriere lors du clique sur un bouton */
+button:active {
+  transform: scale(0.98);
+}
 
 button {
   width: 35%;
@@ -165,13 +172,13 @@ button {
   align-items: center;
 }
 
-.filtre{
-    margin-top: 1em;
+.filtre {
+  margin-top: 1em;
 }
 
 .filtre p {
   font-size: 1.125em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 /* Paragraphe info */
@@ -200,12 +207,12 @@ button {
 
 /* Cacher les checkbox par defaut au navigateur */
 .checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
 .filtre form {
   display: flex;
@@ -231,6 +238,7 @@ button {
 }
 
 .checkmark {
+  cursor: pointer;
   height: auto;
   width: auto;
   display: flex;
@@ -250,9 +258,9 @@ button {
   background-color: #deebff;
 }
 
-.filtre form input:active + label{
-    transform: scale(0.98);
-  }
+.filtre form input:active + label {
+  transform: scale(0.98);
+}
 
 .filtre form label span {
   font-size: 1.125em;
@@ -262,25 +270,38 @@ button {
 
 /* FOOTER */
 
-footer{
-    background-color: #f2f2f2;
+footer {
+  background-color: #f2f2f2;
 }
 
-footer div{
-    margin-left: 3.125em ;
-    margin-top: 3.125em ;
-    margin-bottom: 3.375em;
-    display: flex;
-    flex-direction: row;
+footer div {
+  margin-left: 3.125em;
+  margin-top: 3.125em;
+  margin-bottom: 3.375em;
+  display: flex;
+  flex-direction: row;
 }
 
-footer div div{
-    display: flex;
-    flex-direction: column;
+footer div div {
+  display: flex;
+  flex-direction: column;
+  color: #000;
 }
 
-footer div div ul{
-    padding: 0em;
+footer div div ul {
+  padding: 0em;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a:visited {
+  color: #000;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /***********
