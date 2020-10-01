@@ -17,7 +17,8 @@ Set et reset CSS
 
 /* Determine la taille max, et centre le contenue de la page*/
 #bloc_principal {
-  margin: 0em 56px; /* 0px 56px*/
+    width: 83em; /* 1440px - 2*56px = 1328px*/
+    margin: 0em auto;
 }
 
 /* Suppression des styles par defaut des listes a puces */
@@ -48,8 +49,8 @@ CSS
   align-items: center;
 }
 #header_div_1 nav {
-  position: absolute;
-  left: 65%;
+  position: relative;
+  right: 0%;
   width: 33%;
   color: #0065fc;
   /* border:1px dotted black; */
@@ -157,9 +158,13 @@ button {
   align-items: center;
 }
 
+.filtre{
+    margin-top: 1em;
+}
+
 .filtre p {
   font-size: 1.125em;
-  margin-right: 1em;
+  margin-right: .5em;
 }
 
 /* Paragraphe info */
@@ -199,8 +204,8 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80%;
-  border: 1px black solid;
+  width: 65%;
+  /* border: 1px black solid; */
   padding-left: 0em;
 }
 
@@ -247,6 +252,11 @@ button {
   margin-left: 0.813em;
   margin-right: 1.25em;
 }
+
+/* footer{
+    height: 20px;
+    background-color: grey;
+} */
 
 /***********
 Media Querries
