@@ -37,8 +37,8 @@
                         <!-- Zone de saisie et bouton de recherche -->
                         <i id="icone_locate" class="fas fa-map-marker-alt"></i>
                         <form>
-                            <input type="search" id="champ_recherche" name="recherche"
-                                minlength="0" maxlength="128" size="21%" placeholder=" Ville, pays">
+                            <input type="search" id="champ_recherche" name="recherche" minlength="0" maxlength="128"
+                                size="21%" placeholder=" Ville, pays">
                         </form>
                         <button>Rechercher</button>
                     </div>
@@ -46,17 +46,31 @@
                 <div>
                     <!-- Filtres et paragraphe -->
                     <div class="filtre">
-                    <p>Filtres</p>
-                    <ul>
-                        <li><p class="icone_filtre"><i class="fas fa-money-bill-wave"></i></p><span>Économique</span></li>
-                        <li><p class="icone_filtre"><i class="fas fa-child"></i></p><span>Familial</span></li>
-                        <li><p class="icone_filtre"><i class="fas fa-heart"></i></p><span>Romantique</span></li>
-                        <li><p class="icone_filtre"><i class="fas fa-dog"></i></p><span>Animaux autorisés</span></li>
-                    </ul> <br/>
-                </div>
-                <div>
-                    <p class="info"><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
-                </div>
+                        <p>Filtres</p>
+                        <form method="post" name="#">
+                            <input type="checkbox" name="economique" id="economique" class="checkbox">
+                            <label for="economique" class="checkmark">
+                                <p class="icone_filtre"><i class="fas fa-money-bill-wave"></i></p>
+                                <span>Économique</span>
+                            </label>
+                            <input type="checkbox" name="famille" id="famille" class="checkbox">
+                            <label for="famille" class="checkmark">
+                                <p class="icone_filtre"><i class="fas fa-child"></i></p><span>Familial</span>
+                            </label>
+                            <input type="checkbox" name="romantique" id="romantique" class="checkbox">
+                            <label for="romantique" class="checkmark">
+                                <p class="icone_filtre"><i class="fas fa-heart"></i></p><span>Romantique</span>
+                            </label>
+                            <input type="checkbox" name="animaux" id="animaux" class="checkbox">
+                            <label for="animaux" class="checkmark">
+                                <p class="icone_filtre"><i class="fas fa-dog"></i></p><span>Animaux autorisés</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div>
+                        <p class="info"><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans
+                                cette ville</span></p>
+                    </div>
                 </div>
             </header>
             <section>

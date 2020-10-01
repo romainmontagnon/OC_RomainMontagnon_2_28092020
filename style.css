@@ -3,48 +3,36 @@ Set et reset CSS
 ***********/
 
 /* Applique la police a toute la page */
-*{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: 1em;
+* {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 1em;
 }
 
-#bloc_general{
-    width: 90em; /* 1440px*/
-    margin:0em auto;
-    /* border: black 2px solid; */
+#bloc_general {
+  width: 90em; /* 1440px*/
+  margin: 0em auto;
+  /* border: black 2px solid; */
 }
 
 /* Determine la taille max, et centre le contenue de la page*/
-#bloc_principal{
-    margin: 0em 56px; /* 0px 56px*/
+#bloc_principal {
+  margin: 0em 56px; /* 0px 56px*/
 }
 
 /* Suppression des styles par defaut des listes a puces */
 ul {
-    list-style-type: none;
-    }
+  list-style-type: none;
+}
 
 /* Desactivation du soulignement automatique des liens */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* Les liens une fois cliqués apparaissent en noir */
-a:visited{
-    color:black;
-}
-
-/* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
-button:focus{
-    outline:0;
-}
-
-button:hover{
-    background: linear-gradient(#0065fc, #0040fc);
-}
-button:active{
-    transform: scale(0.98);
+a:visited {
+  color: black;
 }
 
 /***********
@@ -53,30 +41,30 @@ CSS
 
 /* HEADER*/
 /* Logo et NAV */
-#header_div_1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#header_div_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 #header_div_1 nav {
-    position : absolute;
-    left : 65%;
-    width: 33%;
-    color:#0065fc;
-    /* border:1px dotted black; */
+  position: absolute;
+  left: 65%;
+  width: 33%;
+  color: #0065fc;
+  /* border:1px dotted black; */
 }
-#header_div_1 nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* border:1px solid green; */
+#header_div_1 nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border:1px solid green; */
 }
 
-#header_div_1 nav ul li{
-    width: 33%;
-    text-align: center;
-    /* border: blue 1px dotted; */
+#header_div_1 nav ul li {
+  width: 33%;
+  text-align: center;
+  /* border: blue 1px dotted; */
 }
 
 /* #header_div_1 nav ul li:hover{
@@ -84,143 +72,188 @@ CSS
     margin-top: 20px;    
 } */
 
-.nav_link:hover{
-    width: 2.5em; /* 40px */
-    border-top : 0.188em #0065FC solid; /* 3px */
-    padding-top: 1.063em; /* 17px */
+.nav_link:hover {
+  width: 2.5em; /* 40px */
+  border-top: 0.188em #0065fc solid; /* 3px */
+  padding-top: 1.063em; /* 17px */
 }
 
-#inscrire{
-    font-weight: 700;
+#inscrire {
+  font-weight: 700;
 }
 
 /* HEADER*/
 /* Titre Paragraphe Bouton */
 
-header h2{
-    font-size: 1.25em;
-    font-weight: 700;
+header h2 {
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
-header p{
-    font-size: 0.938em;
+header p {
+  font-size: 0.938em;
 }
 /* Boite de recherche */
 
-#box_recherche{
-    font-size: 1.125em;
-    width: 29%;
-    height: 3.188em; /* 51px*/
-    border: 0.063em solid #f2f2f2;
-    border-radius: 0.813em 0.813em;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#box_recherche {
+  font-size: 1.125em;
+  width: 29%;
+  height: 3.188em; /* 51px*/
+  border: 0.063em solid #f2f2f2;
+  border-radius: 0.813em 0.813em;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#icone_locate{
-    width: 12.4%;
-    display: flex;
-    justify-content: center;
+#icone_locate {
+  width: 12.4%;
+  display: flex;
+  justify-content: center;
 }
 
-#champ_recherche{
-    height: 3.188em; /* 51px*/
-    border: none;
-    font-weight: 700;
-    /* border: 1px solid #000; */
+#champ_recherche {
+  height: 3.188em; /* 51px*/
+  border: none;
+  font-weight: 700;
 }
 
-button{
-    width: 35%;
-    height: 3.125em; /* 50px*/
-    box-sizing: content-box ;
-    border: 0.063em solid #f2f2f2;
-    border-top-right-radius: 0.813em;
-    border-bottom-right-radius: 0.813em;
-    background-color:#0065fc;
-    color: white;
-    border: none;
-    font-weight: 700;
+/* Bouton */
+/* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
+button:focus {
+    outline: 0;
+  }
+  /* Effet de degrader lors du survol d'un bouton */
+  button:hover {
+    background: linear-gradient(#0065fc, #0040fc);
+  }
+  /* Effet de zoom arriere lors du clique sur un bouton */
+  button:active {
+    transform: scale(0.98);
+  }
+
+button {
+  width: 35%;
+  height: 3.125em; /* 50px*/
+  box-sizing: content-box;
+  border: 0.063em solid #f2f2f2;
+  border-top-right-radius: 0.813em;
+  border-bottom-right-radius: 0.813em;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  font-weight: 700;
 }
 
 /* HEADER*/
+/* Filtres, paragraphe filtre et paragraphe info */
+
+/* paragraphe filtre et paragraphe info */
+.filtre,
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filtre p {
+  font-size: 1.125em;
+  margin-right: 1em;
+}
+
+/* Paragraphe info */
+.info i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.813em;
+  color: #0065fc;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid #f2f2f2 0.063px;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.688em; /* 11px */
+}
+
+.info span {
+  font-size: 1.063em;
+}
+
+/* HEADER*/
+/* Filtres, paragraphe filtre et paragraphe info */
 /* Filtres */
 
-.filtre, .info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* Cacher les checkbox par defaut au navigateur */
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.filtre form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  border: 1px black solid;
+  padding-left: 0em;
 }
 
-.filtre p{
-    font-size: 1.125em;;
-    margin-right: 1em;
-}
-.filtre ul{
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    border: 1px black solid;
-    padding-left: 0em;
-}
-
-.icone_filtre{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #0065fc;
-    background-color: #deebff;
-    border-radius: 50%;
-    width : 2em;
-    height: 2em;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.icone_filtre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.filtre ul li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0.126em #f2f2f2 solid;
-    border-radius: 20px;
-    margin-left: 1.5em;
+.checkmark {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0.126em #f2f2f2 solid;
+  border-radius: 20px;
+  margin-left: 1.5em;
+  background-color: ;
 }
 
-.filtre ul li span{
-    font-size: 1.125em;
-    margin-left: 0.813em;
-    margin-right: 1.25em;
+.filtre form input:hover + label {
+  background-color: #deebff;
 }
 
-.info i{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.813em;
-    color: #0065fc;
-    background-color: #fff;
-    border-radius: 50%;
-    border: solid #f2f2f2 0.063px;
-    width : 1.5em;
-    height: 1.5em;
-    margin-right: 0.688em; /* 11px */
+.filtre form input:checked + label {
+  background-color: #deebff;
 }
 
-.info span{
-    font-size: 1.063em;
-}
+.filtre form input:active + label{
+    transform: scale(0.98);
+  }
 
+.filtre form label span {
+  font-size: 1.125em;
+  margin-left: 0.813em;
+  margin-right: 1.25em;
+}
 
 /***********
 Media Querries
 ***********/
-@media all and (max-width: 768px){
-    #bloc_general{
-        width: auto;
-        margin:auto;
-    }
+@media all and (max-width: 768px) {
+  #bloc_general {
+    width: auto;
+    margin: auto;
+  }
 }
