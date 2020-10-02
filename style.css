@@ -10,13 +10,13 @@ Set et reset CSS
 }
 
 #bloc_general {
-  width: 90rem; /* 1440px*/
+  width: 90rem; /* 1440pt ou 1920px*/
   margin: 0rem auto;
 }
 
 /* Determine la taille max, et centre le contenue de la page*/
 #bloc_principal {
-  width: 83rem; /* 1440px - 2*56px = 1328px*/
+  width: 83.75rem; /* 1440px - 100px = 1340px*/
   margin: 0rem auto;
 }
 
@@ -260,6 +260,54 @@ button {
   margin-right: 1.25rem;
 }
 
+/* SECTION */
+
+#div_central{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section_div{
+  background-color: #f2f2f2;
+  border-radius: 0.938rem;
+}
+
+#hebergement{
+  width: 55rem;
+  height: 39.188rem; /* 627px */
+}
+
+#hebergement h2{
+  margin-top: 2.875rem;
+  margin-left: 2.5rem;
+}
+
+#popularite{
+  width: 26.25rem;
+  height: 39.188rem; /* 627px */
+}
+
+#popularite_titre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.875rem;
+  margin-right: 2.563rem;
+  margin-left: 2.313rem;
+}
+
+#div_activite{
+  width: 100%;
+  height: 31.25rem; /* 500px */
+  margin-top: 4.063rem;
+  border: 1px black solid;
+  border-radius: 0.938rem;
+}
+#div_activite h2{
+  margin-top:0px;
+}
+
 /* FOOTER */
 
 footer {
@@ -270,9 +318,10 @@ footer h3{
   margin-top: 1.375rem;
 }
 #footer_div {
+  height: 13.625rem;
   margin-right: 23.125rem;
   margin-left: 3.125rem;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
