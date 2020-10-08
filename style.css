@@ -239,7 +239,7 @@ button {
   border: 0.126rem #f2f2f2 solid;
   border-radius: 20px;
   margin-left: 1.5rem;
-  background-color: ;
+  background-color: #fff ;
 }
 
 .filtre form input:hover + label {
@@ -339,7 +339,7 @@ footer h3{
 
 footer li {
   font-size: 1rem;
-  margin-bottom: 0.938rem;0;
+  margin-bottom: 0.938rem;
 }
 
 footer a {
