@@ -293,11 +293,6 @@ button {
   margin-top: 3.125rem;
 }
 
-#hebergement_afficher_tout{
-  margin-top: 2.5rem;
-  margin-bottom: 3.125rem;
-}
-
 #hebergement_liens{
   display: flex;
   flex-direction: row;
@@ -309,6 +304,7 @@ button {
   background-color: #fff;
   width: 15.375rem;
   height: 12.438rem;
+  margin-bottom: 1.875rem;
   border-radius:0.938rem;
 }
 .div_photo_hebergement_photo{
