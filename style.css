@@ -269,6 +269,7 @@ button {
 }
 
 /* SECTION */
+/* Hebergement, Popularite, Activite */
 
 #div_central{
   display: flex;
@@ -279,6 +280,27 @@ button {
   background-color: #f2f2f2;
   border-radius: 0.938rem;
 }
+
+.etoile{
+  margin-top: 0.5rem;
+}
+.etoile span{
+  margin-right: 0.188rem;
+}
+
+.star_blue_filling{
+  color: #0065fc;
+}
+
+.star_grey_filling{
+  color: #f2f2f2;
+}
+.prix{
+  font-weight: 700;
+}
+
+/* SECTION */
+/* Div Hebergement */
 
 #hebergement{
   width: 55rem;
@@ -339,23 +361,8 @@ button {
   margin-bottom: 0rem;
 }
 
-.etoile{
-  margin-top: 0.5rem;
-}
-.etoile span{
-  margin-right: 0.188rem;
-}
-
-.star_blue_filling{
-  color: #0065fc;
-}
-
-.star_grey_filling{
-  color: #f2f2f2;
-}
-.prix{
-  font-weight: 700;
-}
+/* SECTION */
+/* Div Popularite */
 
 .div_photo_populaire{
   background-color: #fff;
@@ -403,15 +410,91 @@ button {
   margin-left: 2.313rem;
 }
 
+/* SECTION */
+/* Div Activité */
+
 #activite{
   width: 100%;
   height: 31.25rem; /* 500px */
   margin-top: 4.063rem;
-  border: 1px black solid;
+  margin-bottom: 3.75rem;
   border-radius: 0.938rem;
 }
 #activite h2{
   margin-top:0px;
+}
+
+.grid > div{
+  background-color: #fff;
+  border-radius: 0.938rem;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe;
+}
+
+.grid > div h3{
+  background-color: #fff;
+  padding-left:1.25rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  border-radius: 0rem 0rem 0.938rem 0.938rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 18.75rem 18.75rem 18.75rem 18.75rem;
+  column-gap: 2.75rem;
+  grid-template-rows: 14.75rem 10.313rem ;
+  row-gap: 2.75rem;
+}
+
+.grid_child_01{
+  background: center no-repeat url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  grid-column-start: 1;
+  grid-row-end: span 2;
+}
+
+.grid_child_02{
+  background: center no-repeat url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  grid-column-start: 2;
+}
+
+.grid_child_03{
+  background: center no-repeat url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.grid_child_04{
+  background:  no-repeat url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  grid-column-start: 3;
+  grid-row-end: span 2;  
+}
+
+.grid_child_05{
+  background: center no-repeat url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.grid_child_06{
+  background: center no-repeat url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.grid_child_01 h3, .grid_child_04 h3{
+  position: relative;
+  top: 86.5%;
+}
+
+.grid_child_02 h3, .grid_child_05 h3{
+  position: relative;
+  top: 73.5%;
+}
+
+.grid_child_03 h3, .grid_child_06 h3{
+  position: relative;
+  top: 62.5%;
 }
 
 /* FOOTER */
