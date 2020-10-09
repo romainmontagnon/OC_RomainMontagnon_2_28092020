@@ -61,12 +61,25 @@ h3 {
 
 /* HEADER*/
 /* Logo et NAV */
+.nav_link_01{
+  display: none;
+}
+
+.nav_link_02{
+  display: none;
+}
+
+.nav_link_03{
+  display: none;
+}
+
 #header_div_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 #header_div_1 nav {
   position: relative;
   right: 0%;
@@ -74,6 +87,7 @@ h3 {
   color: #0065fc;
   /* border:1px dotted black; */
 }
+
 #header_div_1 nav ul {
   display: flex;
   flex-direction: row;
@@ -158,7 +172,14 @@ button {
   background-color: #0065fc;
   color: white;
   border: none;
+}
+
+button span{
   font-weight: 700;
+}
+
+button > i{
+  display: none;
 }
 
 /* HEADER*/
@@ -545,14 +566,4 @@ footer a:visited {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/***********
-Media Querries
-***********/
-@media all and (max-width: 768px) {
-  #bloc_general {
-    width: auto;
-    margin: auto;
-  }
 }
