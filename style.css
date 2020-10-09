@@ -172,38 +172,36 @@ button {
   align-items: center;
 }
 
-.filtre {
-  margin-top: 1rem;
-}
 
-.filtre p {
-  font-size: 1.125rem;
-  margin-right: 0.5rem;
-}
-
-/* Paragraphe info */
-.info i {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.813rem;
-  color: #0065fc;
-  background-color: #fff;
-  border-radius: 50%;
-  border: solid #f2f2f2 0.063px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.688rem; /* 11px */
-}
-
-.info span {
-  font-size: 1.063rem;
-}
 
 /* HEADER*/
 /* Filtres, paragraphe filtre et paragraphe info */
 /* Filtres */
+
+.filtre {
+  margin-top: 1rem;
+}
+
+.filtre > p {
+  font-size: 1.125rem;
+  margin-right: 0.5rem;
+}
+
+.icone_filtre {
+  font-size: 1.125rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 /* Cacher les checkbox par defaut au navigateur */
 .checkbox {
@@ -219,22 +217,7 @@ button {
   flex-direction: row;
   align-items: center;
   width: 65%;
-  /* border: 1px black solid; */
   padding-left: 0rem;
-}
-
-.icone_filtre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #0065fc;
-  background-color: #deebff;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .checkmark {
@@ -264,8 +247,27 @@ button {
 
 .filtre form label span {
   font-size: 1.125rem;
-  margin-left: 0.813rem;
   margin-right: 1.25rem;
+}
+/* HEADER */
+/* Paragraphe info */
+.info i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.813rem;
+  color: #0065fc;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid #f2f2f2 0.063px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.688rem; /* 11px */
+}
+
+.info span {
+  font-size: 1.063rem;
 }
 
 /* SECTION */
