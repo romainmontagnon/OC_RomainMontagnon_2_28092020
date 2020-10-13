@@ -45,11 +45,6 @@ ul {
   .div_photo_hebergement:hover, .div_photo_populaire:hover{
     background-color: #deebff;
   }
-
-  .section_div{
-    background-color: #f2f2f2;
-    border-radius: 0.938rem;
-  }
   
   .etoile{
     margin-top: 0.5rem;
@@ -202,6 +197,7 @@ button:focus {
 button:hover{
   background: linear-gradient(#0065fc, #0040fc);
 }
+
 /* Effet de zoom arriere lors du clique sur un bouton */
 button:active{
   transform: scale(0.98);
@@ -230,6 +226,10 @@ button span:first-child{
 
 #id_filtre{
   margin: 0rem 1.25rem 0rem 1.25rem;
+}
+
+.filtre p{
+  font-weight: 700;
 }
 
 .filtre{
@@ -267,24 +267,25 @@ button span:first-child{
 }
 
 .filtre form{
-  /* display: flex;
-  flex-direction: row; */
-  align-items: center;
-  width: 65%;
-  padding-left: 0rem;
+  width: fit-content;
+}
+
+.filtre form label:nth-of-type(1){
+  float: left;
+  margin-right: 0.813rem;
 }
 
 .checkmark{
   cursor: pointer;
   height: auto;
-  width: auto;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   border: 0.126rem #f2f2f2 solid;
   border-radius: 20px;
-  margin-left: 1.5rem;
-  background-color: #fff ;
+  background-color: #fff;
+  margin-bottom: 0.813rem;
 }
 
 .filtre form input:hover + label{
@@ -299,12 +300,24 @@ button span:first-child{
   transform: scale(0.98);
 }
 
-.filtre form label span{
+.texte_filtre{
   font-size: 1.125rem;
   margin-right: 1.25rem;
+  font-weight: 700;
 }
+
+.texte_filtre{
+
+}
+
 /* HEADER */
 /* Paragraphe info */
+
+.info{
+  display: flex;
+  flex-direction: row;
+}
+
 .info i{
   display: flex;
   flex-direction: row;
@@ -322,12 +335,140 @@ button span:first-child{
 
 .info span{
   font-size: 1.063rem;
+  width: fit-content;
+
 }
 
-section{
-    display: none;
+/* SECTION */
+/* Hebergement, Popularite, Activite */
+
+#div_central{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+#div_central > div:nth-of-type(2){
+  background-color: #f2f2f2;
+  border-radius: 0.938rem;
+}
+
+.section_div a{
+  color: #000;
+}
+
+/* SECTION */
+/* Div Hebergement */
+
+#hebergement_detail{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+#hebergement_detail{
+  box-sizing: content-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#hebergement_detail h2{
+  margin-top: 3.125rem;
+}
+
+#hebergement_liens{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.div_photo_hebergement{
+  background-color: #fff;
+  width: 21.438rem;
+  height: 12.438rem;
+  margin-bottom: 1.875rem;
+  border-radius:0.938rem;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe; 
+}
+
+.div_photo_hebergement_photo{
+  width: 20.883rem;
+  height: 7.125rem;
+  overflow: hidden;
+  border-radius: 0.938rem 0.938rem 0rem 0rem;
+}
+
+.div_photo_hebergement_photo img{
+  box-sizing: content-box;
+  width: 100%;
+  border-radius: 0.938rem 0.938rem 0rem 0rem;
+  margin: 0rem 0.313rem 0rem 0.313rem;
+}
+
+.div_photo_hebergement_texte{
+  margin-left: 1rem;
+}
+
+.div_photo_hebergement_texte p, .div_photo_hebergement_texte h3{
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+/* SECTION */
+/* Div Popularite */
+
+.div_photo_populaire{
+  background-color: #fff;
+  width: 21.438rem;
+  height: 9rem;
+  margin-bottom: 2.063rem;
+  border-radius:0.938rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe;  
+}
+
+.div_photo_populaire_photo{
+  width: 7.938rem;
+  height: 8.375rem;
+}
+
+.div_photo_populaire_photo img{
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.938rem 0rem 0rem 0.938rem;
+  margin: 0.313rem 0rem 0.313rem 0.313rem; 
+}
+
+.div_photo_populaire_texte{
+  margin-left: 1.25rem;
+}
+
+#popularite{
+  width: 26.25rem;
+  height: 39.188rem; /* 627px */
+}
+.div_photo_populaire{
+  margin-left: 2.313rem;  
+}
+
+#popularite_titre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.875rem;
+  margin-right: 2.563rem;
+  margin-left: 2.313rem;
+}
+
+#activite{
+  display: none;
 }
 
 footer{
-    display: none;
+  display: none;
 }
