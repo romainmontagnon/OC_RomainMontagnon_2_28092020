@@ -6,8 +6,8 @@
     <title>Reservia, planifiez vos vacances</title>
     <meta name="Nuit à partir de " content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" media="screen and (max-width: 667px)" href="mobile_style.css" />
+    <link rel="stylesheet" media="(min-device-width: 1024px" href="style.css">
+    <link rel="stylesheet" media="(max-device-width: 1024px)" href="mobile_style.css">
     <!-- Integration de la police de caractère via Google Font avec plusieurs propriétés Extra Light 200, Regular 400, Bold 700 et Black 900 -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
     <!-- Integration de Fontawesome -->
@@ -20,17 +20,10 @@
             <header>
                 <div id="header_div_1">
                     <!-- Titre et navigation -->
-                    <img src="images/logo/Reservia.svg" alt="logo reservia">
+                    <img src="images/logo/Reservia.svg" alt="logo reservia" width="97" height="45">
                     <span class="nav_link nav_link_01"><a href="#hebergement">Hébergements</a></span>
                     <span class="nav_link nav_link_02"><a href="#activite">Activités</a></span>
                     <span class="nav_link nav_link_03"><a href="#i"><strong id="inscrire">S'inscrire</strong></a></span>
-                    <nav>
-                        <ul>
-                            <li class="nav_link"><a href="#hebergement">Hébergements</a></li>
-                            <li class="nav_link"><a href="#activite">Activités</a></li>
-                            <li class="nav_link"><a href="#i"><strong id="inscrire">S'inscrire</strong></a></li>
-                        </ul>
-                    </nav>
                 </div>
                 <div id="recherche">
                     <!-- Titre H2, paragraphe et DIV pour recherche -->
@@ -43,7 +36,10 @@
                             <input type="search" id="champ_recherche" name="recherche" minlength="0" maxlength="128"
                                 size="21" placeholder=" Ville, pays">
                         </form>
-                        <button><span>Rechercher</span></button>
+                        <button>
+                            <span>Rechercher</span>
+                            <span><i class="fas fa-search"></i></span>
+                        </button>
                     </div>
                 </div>
                 <div id="id_filtre">

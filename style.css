@@ -9,6 +9,10 @@ Set et reset CSS
   font-size: 1rem;
 }
 
+body{
+  margin: 0rem;
+}
+
 #bloc_general {
   width: 90rem; /* 1440pt ou 1920px*/
   margin: 0rem auto;
@@ -33,6 +37,10 @@ a {
 /* Les liens une fois cliqués apparaissent en noir */
 a:visited {
   color: black;
+}
+
+a:active {
+  color: #000;
 }
 
 .lien_text:hover{
@@ -61,59 +69,38 @@ h3 {
 
 /* HEADER*/
 /* Logo et NAV */
-.nav_link_01{
-  display: none;
-}
-
-.nav_link_02{
-  display: none;
-}
-
-.nav_link_03{
-  display: none;
-}
 
 #header_div_1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
+  grid-template-rows: 3.875rem;
+  margin-top: 0rem;
 }
 
-#header_div_1 nav {
-  position: relative;
-  right: 0%;
-  width: 33%;
-  color: #0065fc;
-  /* border:1px dotted black; */
+#header_div_1 > img{
+  padding-top: 0.625rem;
 }
 
-#header_div_1 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top:0px;
-  /* border:1px solid green; */
+.nav_link_03 strong{
+  font-weight: 700;
 }
 
-#header_div_1 nav ul li {
-  width: 33%;
+.nav_link_01, .nav_link_02, .nav_link_03 {
+  width: 100%;
   text-align: center;
+  padding-top: 1.25rem;
+  margin-top: 0rem;
 }
 
-.nav_link:hover {
+.nav_link_01:hover, .nav_link_02:hover, .nav_link_03:hover{
   border-top: 0.188rem #0065fc solid; /* 3px */
   cursor: pointer;
 }
 
-.nav_link {
-    /* width: 2.5rem; 40px */
-    border-top:0.188rem #fff solid;
-    padding-top: 1.063rem; /* 17px */
-  }
-
-#inscrire {
-  font-weight: 700;
+.nav_link_01, .nav_link_02, .nav_link_03{
+  border-top: 0.188rem #fff solid; /* 3px */
+  cursor: pointer;
 }
 
 /* HEADER*/
@@ -150,6 +137,9 @@ header p {
 
 /* Bouton */
 /* Supprine le surlignage d'un bouton lorsqu'on clique dessus */
+button span:last-child{
+  display: none;
+}
 button:focus {
   outline: 0;
 }
@@ -302,6 +292,10 @@ button > i{
 .section_div{
   background-color: #f2f2f2;
   border-radius: 0.938rem;
+}
+
+.section_div a{
+  color: #000;
 }
 
 .etoile{
