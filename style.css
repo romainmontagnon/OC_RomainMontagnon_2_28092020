@@ -3,43 +3,39 @@ Set et reset CSS
 ***********/
 
 /* Applique la police a toute la page */
-* {
+*{
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 1rem;
 }
 
 body{
-  margin: 0rem;
-}
-
-#bloc_general {
   width: 90rem; /* 1440pt ou 1920px*/
   margin: 0rem auto;
 }
 
 /* Determine la taille max, et centre le contenue de la page*/
-#bloc_principal {
+#bloc_principal{
   width: 83.75rem; /* 1440px - 100px = 1340px*/
   margin: 0rem auto;
 }
 
 /* Suppression des styles par defaut des listes a puces */
-ul {
+ul{
   list-style-type: none;
 }
 
 /* Desactivation du soulignement automatique des liens */
-a {
+a{
   text-decoration: none;
 }
 
 /* Les liens une fois cliqués apparaissent en noir */
-a:visited {
+a:visited{
   color: black;
 }
 
-a:active {
+a:active{
   color: #000;
 }
 
@@ -65,12 +61,12 @@ CSS
 
 /* Regles generales */
 
-h2 {
+h1, h2{
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-h3 {
+h3{
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -78,7 +74,7 @@ h3 {
 /* HEADER*/
 /* Logo et NAV */
 
-#header_div_1 {
+#header_div_1{
   width: 100%;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr 1fr;
@@ -114,12 +110,12 @@ h3 {
 /* HEADER*/
 /* Titre Paragraphe Bouton */
 
-header p {
+header p{
   font-size: 0.938rem;
 }
 /* Boite de recherche */
 
-#box_recherche {
+#box_recherche{
   font-size: 1.125rem;
   width: 29%;
   height: 3.188rem; /* 51px*/
@@ -131,13 +127,13 @@ header p {
   align-items: center;
 }
 
-#icone_locate {
+#icone_locate{
   width: 12.4%;
   display: flex;
   justify-content: center;
 }
 
-#champ_recherche {
+#champ_recherche{
   height: 3.188rem; /* 51px*/
   border: none;
   font-weight: 700;
@@ -148,19 +144,19 @@ header p {
 button span:last-child{
   display: none;
 }
-button:focus {
+button:focus{
   outline: 0;
 }
 /* Effet de degrader lors du survol d'un bouton */
-button:hover {
+button:hover{
   background: linear-gradient(#0065fc, #0040fc);
 }
 /* Effet de zoom arriere lors du clique sur un bouton */
-button:active {
+button:active{
   transform: scale(0.98);
 }
 
-button {
+button{
   width: 38%;
   height: 3.125rem; /* 50px*/
   box-sizing: content-box;
@@ -185,7 +181,7 @@ button > i{
 
 /* paragraphe filtre et paragraphe info */
 .filtre,
-.info {
+.info{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -197,17 +193,17 @@ button > i{
 /* Filtres, paragraphe filtre et paragraphe info */
 /* Filtres */
 
-.filtre {
+.filtre{
   margin-top: 1rem;
 }
 
-.filtre > p {
+.filtre > p{
   font-size: 1.125rem;
   margin-right: 0.5rem;
   font-weight: 700;
 }
 
-.icone_filtre {
+.icone_filtre{
   font-size: 1.125rem;
   margin-right: 0.5rem;
   display: flex;
@@ -224,7 +220,7 @@ button > i{
 }
 
 /* Cacher les checkbox par defaut au navigateur */
-.checkbox {
+.checkbox{
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -232,7 +228,7 @@ button > i{
   width: 0;
 }
 
-.filtre form {
+.filtre form{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -240,7 +236,7 @@ button > i{
   padding-left: 0rem;
 }
 
-.checkmark {
+.checkmark{
   cursor: pointer;
   height: auto;
   width: auto;
@@ -253,15 +249,15 @@ button > i{
   background-color: #fff ;
 }
 
-.filtre form input:hover + label {
+.filtre form input:hover + label{
   background-color: #deebff;
 }
 
-.filtre form input:checked + label {
+.filtre form input:checked + label{
   background-color: #deebff;
 }
 
-.filtre form input:active + label {
+.filtre form input:active + label{
   transform: scale(0.98);
 }
 
@@ -273,7 +269,7 @@ button > i{
 
 /* HEADER */
 /* Paragraphe info */
-.info i {
+.info i{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -288,7 +284,7 @@ button > i{
   margin-right: 0.688rem; /* 11px */
 }
 
-.info span {
+.info span{
   font-size: 1.063rem;
 }
 
@@ -546,13 +542,13 @@ button > i{
 
 /* FOOTER */
 
-footer {
+footer{
   background-color: #f2f2f2;
 }
 footer h3{
   margin-top: 3.125rem;
 }
-#footer_div {
+#footer_div{
   height: 13.625rem;
   margin-right: 23.125rem;
   margin-left: 3.125rem;
@@ -562,30 +558,30 @@ footer h3{
   justify-content: space-between;
 }
 
-#footer_div div {
+#footer_div div{
   display: flex;
   flex-direction: column;
   color: #000;
 }
 
-#footer_div div ul {
+#footer_div div ul{
   padding: 0rem;
 }
 
-footer li {
+footer li{
   font-size: 1rem;
   margin-bottom: 0.938rem;
 }
 
-footer a {
+footer a{
   font-size: 1rem;
   margin-bottom: 0.938rem;
 }
 
-footer a:visited {
+footer a:visited{
   color: #000;
 }
 
-footer a:hover {
+footer a:hover{
   text-decoration: underline;
 }
