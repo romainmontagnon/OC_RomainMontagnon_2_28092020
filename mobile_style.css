@@ -14,7 +14,7 @@ Set et reset CSS
 }
 
 /* Determine la taille max, et centre le contenue de la page*/
-body, #bloc_general, #bloc_principal{
+body{
   width: fit-content;
   margin: 0 auto;
 }
