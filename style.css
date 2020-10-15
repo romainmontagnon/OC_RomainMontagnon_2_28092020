@@ -51,6 +51,14 @@ a:active {
   background-color: #deebff;
 }
 
+.div_photo_hebergement:active, .div_photo_populaire:active{
+  transform: scale(0.98);
+}
+
+.section_div a, .grid a{
+  color: #000;
+}
+
 /***********
 CSS
 ***********/
@@ -297,10 +305,6 @@ button > i{
   border-radius: 0.938rem;
 }
 
-.section_div a{
-  color: #000;
-}
-
 .etoile{
   margin-top: 0.5rem;
 }
@@ -450,7 +454,22 @@ button > i{
   box-shadow: 0.188rem 0.188rem 1rem #bebebe;
 }
 
+.grid > a{
+  background-color: #fff;
+  border-radius: 0.938rem;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe;
+}
+
 .grid > div h3{
+  background-color: #fff;
+  padding-left:1.25rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  border-radius: 0rem 0rem 0.938rem 0.938rem;
+}
+
+.grid_h3_title h3{
   background-color: #fff;
   padding-left:1.25rem;
   padding-top: 1.375rem;
@@ -502,19 +521,27 @@ button > i{
   grid-row-start: 2;
 }
 
-.grid_child_01 h3, .grid_child_04 h3{
+.grid_child_01 .grid_h3_title, .grid_child_04 .grid_h3_title{
   position: relative;
   top: 86.5%;
 }
 
-.grid_child_02 h3, .grid_child_05 h3{
+.grid_child_02 .grid_h3_title, .grid_child_05 .grid_h3_title{
   position: relative;
   top: 73.5%;
 }
 
-.grid_child_03 h3, .grid_child_06 h3{
+.grid_child_03 .grid_h3_title, .grid_child_06 .grid_h3_title{
   position: relative;
   top: 62.5%;
+}
+
+.grid_h3_title h3:hover{
+  background-color: #deebff;
+}
+
+.grid > a:active{
+  transform: scale(0.98);
 }
 
 /* FOOTER */
