@@ -306,10 +306,6 @@ button span:first-child{
   font-weight: 700;
 }
 
-.texte_filtre{
-
-}
-
 /* HEADER */
 /* Paragraphe info */
 
@@ -394,17 +390,18 @@ button span:first-child{
 }
 
 .div_photo_hebergement_photo{
-  width: 20.883rem;
   height: 7.125rem;
   overflow: hidden;
   border-radius: 0.938rem 0.938rem 0rem 0rem;
 }
 
 .div_photo_hebergement_photo img{
-  box-sizing: content-box;
+  box-sizing: border-box;
   width: 100%;
   border-radius: 0.938rem 0.938rem 0rem 0rem;
-  margin: 0rem 0.313rem 0rem 0.313rem;
+  border-top: solid #fff 0.313rem;
+  border-left: solid #fff 0.313rem;
+  border-right: solid #fff 0.313rem;
 }
 
 .div_photo_hebergement_texte{
