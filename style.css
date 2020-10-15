@@ -55,7 +55,7 @@ a:active {
   transform: scale(0.98);
 }
 
-.section_div a, .grid a{
+.section_div a, .grid a, footer a{
   color: #000;
 }
 
@@ -551,7 +551,6 @@ footer {
 }
 footer h3{
   margin-top: 3.125rem;
-  margin-top: 1.375rem;
 }
 #footer_div {
   height: 13.625rem;
@@ -581,7 +580,6 @@ footer li {
 footer a {
   font-size: 1rem;
   margin-bottom: 0.938rem;
-  color: #000;
 }
 
 footer a:visited {

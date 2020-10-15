@@ -15,8 +15,8 @@ Set et reset CSS
 
 /* Determine la taille max, et centre le contenue de la page*/
 body{
-  width: 100%;
-  margin: auto;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* Suppression des styles par defaut des listes a puces */
@@ -40,6 +40,10 @@ ul {
   
   .lien_text:hover{
     color: #5f5f5f;
+  }
+
+  .section_div a, .grid a, footer a{
+    color: #000;
   }
   
   .div_photo_hebergement:hover, .div_photo_populaire:hover{
@@ -84,7 +88,6 @@ h3{
 /* Logo et NAV */
 
 #header_div_1{
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3.875rem 2rem;
@@ -112,7 +115,6 @@ h3{
 .nav_link_01{
   grid-column-start: 1;
   grid-row-start: 2;
-  width: 100%;
   text-align: center;
   align-items: center;
 }
@@ -120,7 +122,6 @@ h3{
 .nav_link_02{
   grid-column-start: 2;
   grid-row-start: 2;
-  width: 100%;
   text-align: center;
 }
 
@@ -136,10 +137,6 @@ h3{
 
   /* HEADER*/
 /* DIV recherche */
-
-#recherche{
-  width: 100%;
-}
 
 #recherche h2{
   margin-top: 2.25rem;
@@ -349,10 +346,6 @@ button span:first-child{
   border-radius: 0.938rem;
 }
 
-.section_div a{
-  color: #000;
-}
-
 /* SECTION */
 /* Div Hebergement */
 
@@ -416,6 +409,14 @@ button span:first-child{
 /* SECTION */
 /* Div Popularite */
 
+#populaire_liens{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .div_photo_populaire{
   background-color: #fff;
   width: 21.438rem;
@@ -445,11 +446,7 @@ button span:first-child{
 }
 
 #popularite{
-  width: 26.25rem;
-  height: 39.188rem; /* 627px */
-}
-.div_photo_populaire{
-  margin-left: 2.313rem;  
+  height:100%;
 }
 
 #popularite_titre{
@@ -462,10 +459,148 @@ button span:first-child{
   margin-left: 2.313rem;
 }
 
+
+/* SECTION */
+/* Div Activité */
+
 #activite{
-  display: none;
+  margin-top: 3.75rem;
+  margin-left: 2.313rem;
+}
+#activite h2{
+  margin-top:0px;
 }
 
-footer{
-  display: none;
+.grid > div{
+  background-color: #fff;
+  border-radius: 0.938rem;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe;
+}
+
+.grid > a{
+  background-color: #fff;
+  border-radius: 0.938rem;
+  box-shadow: 0.188rem 0.188rem 1rem #bebebe;
+}
+
+.grid > div h3{
+  background-color: #fff;
+  padding-left:1.25rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  border-radius: 0rem 0rem 0.938rem 0.938rem;
+}
+
+.grid_h3_title h3{
+  background-color: #fff;
+  padding-left:1.25rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  border-radius: 0rem 0rem 0.938rem 0.938rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 21.438rem;
+  grid-template-rows: 12.438rem 12.438rem 12.438rem 12.438rem 12.438rem 12.438rem;
+  row-gap: 1.5rem;
+}
+
+.grid_child_01{
+  background: center no-repeat url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 1;
+}
+
+.grid_child_02{
+  background: center no-repeat url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 2;
+}
+
+.grid_child_03{
+  background: center no-repeat url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 3;
+}
+
+.grid_child_04{
+  background: center no-repeat url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 4; 
+}
+
+.grid_child_05{
+  background: center no-repeat url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 5;
+}
+
+.grid_child_06{
+  background: center no-repeat url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-size: 100%;
+  grid-row-start: 6;
+}
+
+.grid_h3_title{
+  position: relative;
+  top: 68.5%;
+}
+
+.grid_h3_title h3:hover{
+  background-color: #deebff;
+}
+
+.grid > a:active{
+  transform: scale(0.98);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer h3{
+  margin-top: 1.375rem;
+}
+
+footer ul{
+  margin: 0rem;
+}
+
+#footer_div {
+  height: 100%;
+  margin-left: 3.125rem;
+  margin-top: 1.5rem;
+}
+
+#footer_div div {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+#footer_div div ul {
+  padding: 0rem;
+}
+
+footer li {
+  font-size: 1rem;
+  margin-bottom: 0.938rem;
+}
+
+footer a {
+  font-size: 1rem;
+  margin-bottom: 0.938rem;
+}
+
+footer a:visited {
+  color: #000;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
